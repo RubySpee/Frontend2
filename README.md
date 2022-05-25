@@ -12,14 +12,6 @@ Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal
 Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
 
 
-
-## Bronnenlijst
-  1. -bron 1-
-  2. -bron 2-
-  3. -...-
-
-
-
 ## Opdracht 1 plan
 
 <details open>
@@ -27,7 +19,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je storyboard:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="storyboard voor opdracht 1">
+  ![image](https://user-images.githubusercontent.com/94399952/170222332-b0adfd0d-b60c-48b2-afe9-28da2f98f25d.png)
+  ![image](https://user-images.githubusercontent.com/94399952/170222360-25e36d9e-c1f1-4511-a463-51e40c1cfe5f.png)
 
 
   ### Je ambitie: 
@@ -48,13 +41,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitomst opdracht 1">
+  ![Eindresultaat](https://user-images.githubusercontent.com/94399952/170222265-8d87b416-9ae1-4d0a-9604-e11334f20a0c.png)
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  In het begin ging het nou niet echt heel goed, wist niet echt hoe en wat ik moest doen. Maar na de laatste les (18e) kreeg ik opeens ideeën en het coderen ging opeens goed en had er echt weer zin in. Ik heb eigenlijk van alles wat we moesten doen geleerd. Ik had namelijk nog nooit een animatie gemaakt (geen grote animatie. Wel is een keer iets kleins gemaakt), dus dat was helemaal nieuw voor me en vond ik ook leuk om te leren. Het werken met ::before en ::after was helemaal nieuw voor mij. In begin wist ik totaal niet hoe ik die twee dingen moest gebruiken, maar opeens kreeg ik het door en gingen alles eigenlijk best goed. Ook heb ik geleerd hoe je iets kan maken met html/css ZONDER classes te gebruiken. Normaal gebruikte ik overal classes voor, maar nu ik heb geleerd wat ::before en ::after is, ga ik in de toekomst wel minder classes gebruiken.
 
 
   ### Dit was lastig/Is niet gelukt:
