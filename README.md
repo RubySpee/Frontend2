@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+**Auteur:** Ruby Spee
 
 **De opdrachten:** [opdracht 1](opdracht1/index.html) en [opdracht 2](opdracht2/index.html)
 
@@ -25,10 +25,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Meer leren over coderen
+  - Een animatie maken
  
 </details>
 
@@ -49,9 +47,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  In het begin van de opdracht lukte bijna niks, maar gelukkig richting het einde ging alles opeens goed en is er niet echt iets wat niet gelukt is. Heb wel een paar dingen die ik had willen doen als ik langer de tijd had, maar heb wel gewoon mijn idee uitgewerkt en het werkt, daar ben ik heel blij mee. Ook ben ik op zich wel blij met het eindresultaat en dat alles werkt (na heel veel frustratie), maar ik had misschien wel wat 'moeilijkere' animaties willen maken. Wat me ook niet is gelukt is, is de animatie responsive maken. Op een gegeven moment werkte alles en zag alles er goed uit en wilde dat eigenlijk niet 'verpesten' met het responsive maken. Het was een deel van de opdracht, maar was eigenlijk al heel blij dat ik de animatie had gemaakt en dat het werkte.
+  
 </details>
 
 
