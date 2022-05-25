@@ -1,0 +1,325 @@
+/*********/
+/* FONTS */
+/*********/
+@font-face {
+	font-family: 'jumbo-black';
+	src: url('../fonts/Jumbo-The-Sans-Black.ttf');
+}
+
+@font-face {
+	font-family: 'jumbo-bold' ;
+	src: url('../fonts/Jumbo-The-Sans-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'jumbo';
+	src: url('../fonts/Jumbo-The-Sans.ttf');
+}
+
+@font-face {
+	font-family: 'jumbo-italic';
+	src: url('../fonts/Jumbo-The-Sans-Italic.ttf');
+}
+
+
+
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--smiley:#111;
+	--color-background:#FFFFFF;
+	--color-jumbo: #FEC424;
+	--algemeen: #000000;
+}
+
+
+
+
+
+/*************/
+/* DARK-MODE */
+/*************/
+@media (prefers-color-scheme: dark) {
+	:root {
+		--smiley: #A1A098;
+	}
+
+	body {
+		background-image: url(../images/Achtergrond\ dark.png);
+		background-size: cover;
+	}
+
+	h1 {
+		background-color: var(--color-background);
+	}
+}
+
+
+
+
+
+/*****************************/
+/* ACHTERGROND IN LIGHT MODE */
+/*****************************/
+@media (prefers-color-scheme: light) {
+	body {
+		background-image: url(../images/Achtergrond.png);
+		background-size: cover;
+	}
+}
+
+
+
+
+
+/***********/
+/* LETTERS */
+/***********/
+@keyframes heen-en-weer{
+	0%,
+	100% {
+		transform: rotate(0deg)
+	}
+
+	15% {
+		transform: rotate(-8deg);
+	}
+
+	30% {
+		transform: rotate(14deg);
+	}
+
+	45% {
+		transform: rotate(-3.6deg);
+	}
+
+	60% {
+		transform: rotate(2.4deg);
+	}
+
+	75% {
+		transform: rotate(-1.2deg);
+	}
+}
+
+h1 {
+	/*Bron: https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/*/
+	position: absolute;
+	top: 14%;
+	left: 45%;
+
+	border: 0.2em solid var(--color-jumbo);
+    padding: 0.6em;
+    border-radius: 15px;
+
+	animation-name: heen-en-weer;
+	animation-duration: 2s;
+
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+}
+
+/*Bron: https://projects.verou.me/bubbly/*/
+h1::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 1.5em solid transparent;
+	border-top-color: var(--color-jumbo);
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -4.8em;
+	margin-bottom: -1.5em;
+}
+
+h1 span:nth-of-type(1),
+h1 span:nth-of-type(2),
+h1 span:nth-of-type(3),
+h1 span:nth-of-type(4),
+h1 span:nth-of-type(5) {
+	font-family: 'jumbo-italic';
+	color: var(--algemeen);
+	font-size: 2em;
+}
+
+h1 span:nth-of-type(6),
+h1 span:nth-of-type(7),
+h1 span:nth-of-type(8),
+h1 span:nth-of-type(9),
+h1 span:nth-of-type(10) {
+	font-family: 'jumbo-black';
+	color: var(--color-jumbo);
+	font-size: 3em;
+	letter-spacing: 0.001em;
+	text-transform: uppercase;
+	text-shadow: 0.08em 0.06em #000000;
+}
+
+
+
+
+
+/**********/
+/* SMILEY */
+/**********/
+@keyframes knipperen-oog {
+	0% {
+		transform: scaleY(1);
+		
+	}
+
+	10% {
+		transform: scaleY(0.1);
+	}
+
+	20% {
+		transform: scaleY(1);
+		
+	}
+}
+
+body::before {
+	/*Dit zorgt ervoor dat je dat oog vormpje krijgt*/
+	--smileyheight: 3.6em;
+	--smileywidth: 2.8em;
+  
+	/**Bron: opdracht over before&after**/
+	content:"";
+	display:inline-block;
+	width:var(--smileywidth);
+	height:var(--smileyheight);
+	border-radius:50%;
+	background-color: var(--smiley);
+
+	position: absolute;
+	top: 40%;
+	left: 40%;
+
+	animation-name: knipperen-oog;
+	animation-duration: 8s;
+	animation-delay: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+}
+
+/*Oog 2*/
+body::after {
+	/*Dit zorgt ervoor dat je dat oog vormpje krijgt*/
+	--smileyheight: 3.6em;
+	--smileywidth: 2.8em;
+  
+	/**Bron: opdracht over before&after**/
+	content:"";
+	display:inline-block;
+	width:var(--smileywidth);
+	height:var(--smileyheight);
+	border-radius:50%;
+	background-color: var(--smiley);
+
+	position: absolute;
+	top: 40%;
+	left: 47%;
+
+	animation-name: knipperen-oog;
+	animation-duration: 8s;
+	animation-delay: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes mond {
+	0% {
+		transform: scaleY(1);
+		
+	}
+
+	20% {
+		transform: scaleY(0.4);
+	}
+
+	40% {
+		transform: scaleY(1);
+		
+	}
+}
+
+html::before {
+	--mondheight: 4em;
+	--mondwidth: 5.5em;
+  
+	
+	content:"";
+	display:inline-block;
+	width:var(--mondwidth);
+	height:var(--mondheight);
+	/*Bron:https://dev.to/nazanin_ashrafi/let-s-create-a-simple-smiley-face-with-css-28e6*/
+	border-radius: 7px 7px 100px 100px;
+	background-color: var(--smiley);
+
+	position: absolute;
+	top: 57%;
+	left: 42%;
+
+	animation-name: mond;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+
+
+
+
+/*****************/
+/* WINKEL & AUTO */
+/*****************/
+@keyframes auto{
+	from{
+    	margin-left: -20vw;
+    }
+	to{
+    	margin-left: 80vw;
+    }
+}
+
+section::before {
+	content: url(../images/Vrachtwagen.png);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	animation-name: auto;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+section::after {
+	content: url(../images/Winkel.png);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
